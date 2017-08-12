@@ -25,6 +25,8 @@
 		47179B991B1354FB00CAFD6D /* FileDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47179B8A1B13543B00CAFD6D /* FileDownloadOperation.swift */; };
 		47FFC2F81B092A3800D3EDFE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFC2F71B092A3800D3EDFE /* Session.swift */; };
 		47FFC2F91B092A3800D3EDFE /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FFC2F71B092A3800D3EDFE /* Session.swift */; };
+		D64783C31F27A4CF00186001 /* DataUploadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64783C21F27A4CF00186001 /* DataUploadOperation.swift */; };
+		D64783C41F27A4D300186001 /* DataUploadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64783C21F27A4CF00186001 /* DataUploadOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,7 @@
 		47FFC2831B09279200D3EDFE /* Rebekka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rebekka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FFC2DC1B09297E00D3EDFE /* RebekkaTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RebekkaTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47FFC2F71B092A3800D3EDFE /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		D64783C21F27A4CF00186001 /* DataUploadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUploadOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 			children = (
 				47179B851B1353A500CAFD6D /* WriteStreamOperation.swift */,
 				47179B8E1B13549000CAFD6D /* FileUploadOperation.swift */,
+				D64783C21F27A4CF00186001 /* DataUploadOperation.swift */,
 				47179B901B1354B200CAFD6D /* DirectoryCreationOperation.swift */,
 			);
 			name = Write;
@@ -283,6 +287,7 @@
 				47179B861B1353A500CAFD6D /* WriteStreamOperation.swift in Sources */,
 				47179B821B13530A00CAFD6D /* StreamOperation.swift in Sources */,
 				47179B801B1352FD00CAFD6D /* Operation.swift in Sources */,
+				D64783C31F27A4CF00186001 /* DataUploadOperation.swift in Sources */,
 				47179B891B13541600CAFD6D /* ResourceListOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +304,7 @@
 				47179B931B1354FB00CAFD6D /* StreamOperation.swift in Sources */,
 				47179B921B1354FB00CAFD6D /* Operation.swift in Sources */,
 				47179B951B1354FB00CAFD6D /* FileUploadOperation.swift in Sources */,
+				D64783C41F27A4D300186001 /* DataUploadOperation.swift in Sources */,
 				47179B991B1354FB00CAFD6D /* FileDownloadOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,7 +472,7 @@
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Rebekka/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.fry.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -487,7 +493,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Rebekka/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.fry.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

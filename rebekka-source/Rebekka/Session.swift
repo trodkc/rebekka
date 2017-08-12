@@ -105,6 +105,22 @@ open class Session {
         operation.fileURL = fileURL
         self.operationQueue.addOperation(operation)
     }
+    
+    /** Uploads data at path. */
+    open func upload(_ data: Data, path: String, completionHandler: @escaping BooleanResultCompletionHandler) {
+        let operation = DataUploadOperation(configuration: configuration, queue: self.streamQueue)
+        operation.completionBlock = {
+            [weak operation] in
+            if let strongOperation = operation {
+                self.completionHandlerQueue.addOperation {
+                    completionHandler(strongOperation.error == nil, strongOperation.error)
+                }
+            }
+        }
+        operation.path = path
+        operation.data = data
+        self.operationQueue.addOperation(operation)
+    }
 }
 
 public let kFTPAnonymousUser = "anonymous"
